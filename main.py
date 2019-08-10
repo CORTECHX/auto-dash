@@ -8,7 +8,7 @@ cap.set(3,640) # set Width
 cap.set(4,480) # set Height
 
 while True:
-    img = cv2.imread('img/car_back.png') #cap.read()
+    met, img = cap.read()
     img = cv2.flip(img, 1)
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
